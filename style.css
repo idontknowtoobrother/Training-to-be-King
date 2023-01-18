@@ -1,0 +1,129 @@
+@font-face {
+    font-family: sriFont;
+    src: url(./resources/Srinakharinwirot-Regular.ttf);
+}
+
+*{
+    font-family: sriFont;
+    color: #FFFFFF;
+    font-size: 80px;
+    user-select: none;
+}
+
+body {
+    background: #CD7FF1;
+}
+
+button:focus, input:focus { outline:0; }
+
+button, input {
+    border-radius: 90px;
+    border: none;
+    background: #FFFFFF;
+    color: #CD7FF1;
+    height: 110px;
+    min-width: 300px;
+    padding: 0 30px 0px 30px;
+    transition: .1s;
+    text-align: center;
+}
+input {
+    max-width: 600px;
+}
+
+button:hover {
+    transform: scale(105%);
+    transition: .2s;
+}
+
+button:active {
+    opacity: .5;
+    transition: .3s;
+}
+
+button:focus { outline:0; }
+
+
+.main, .end_game {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.end_game_img {
+    width: 512px;
+}
+
+.end_game_img_defeat {
+    position: absolute;
+    top: 20vh;
+    left: 65vh;
+    transform: rotate(15deg);
+}
+
+#victory {
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 290px;
+    color: #FFFFFF;
+    text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#try_again_btn {
+    position: absolute;
+    color: #3A3A3A;
+    right: 3vw;
+    top: 84vh;
+}
+
+#equation {
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+
+#color {
+    margin-top: 60px;
+    width: 100vw;
+    height: 378px;
+}
+
+#check_answer {
+    background: #94FF98;
+    color: #FFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#letsplay {
+    margin-top: 63px;
+    font-size: 80px;
+    line-height: 30px;
+}
+
+#answerBtn {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+}
+
+#answerColor {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* REMOVE SPINNER*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
